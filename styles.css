@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar{
+    position: absolute;
+    background-color: rgb(223,218,218);
+    width: 434px;
+    font-family: 'Fira Sans', sans-serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar nav{
+    padding: 45px;
+}
+
+.sidebar nav li{
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0px;
+}
+
+.sidebar nav li a{
+    color: black;
+    text-decoration: none;
+}
+
+.main{
+    /* background-color: yellow; */
+    width: 90vw;
+}
+
+.container{
+    display: flex;
+
+}
+
+.info_container{
+    /* background-color: rgb(212, 94, 255); */
+    height: 58vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devPic img{
+    height: 58vh;
+    
+}
+
+.devInfo{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hello{
+    font-size: 3em;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.name{
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.about{
+    font-size: 2.5em;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.moreabout{
+    font-size: 2.2em;
+    font-family: 'Fira Sans', sans-serif;
+    margin-top: 23px;
+}
+
+.buttons{
+    margin-top: 34px;
+    font-size: 16px;
+}
+
+.btn{
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 3px 3px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: white;
+    color: dodgerblue;
+}
+
+.btn-sm{
+    font-size: 10px;
+    padding: 7px 13px;
+    margin: 10px 0px;
+}
+
+.contactform{
+    font-family: 'Fira Sans', sans-serif;
+    padding: 0px 34px;
+    /* padding-top: 144px; */
+    margin: 50px 88px;
+}
+
+.contactform form{
+    margin: 0px 40px;
+
+}
+
+.contactform h1{
+    font-family: 'Source Code Pro', monospace;
+    /* text-align: center; */
+    padding: 12px 0px;
+}
+
+.contactform form div{
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input{
+    /* width: 26vw; */
+    border-radius: 5px;
+    margin: 6px 0px 0px 0px;
+    padding: 3px;
+}
+
+#emailHelp{
+    font-size: 11px;
+    color: midnightblue;
+    margin: 0px 5px;
+    padding: 3px 0px 0px 0px;
+}
+
+#form-check{
+    flex-direction: row;
+}
+
+#form-check input{
+    width: 24px;
+    margin: 3px 0px;
+}
+
+.blogItem{
+    margin: 20px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.blogContainer{
+    margin: 88px;
+}
+
+h1{
+    font-family: 'Fira Sans', sans-serif;
+    margin: 23px;
+}
+
+p{
+    font-family: 'Source Code Pro', monospace;
+}
+
+.intro{
+    margin: 88px;
+}
+
+.intro h2{
+    font-family: 'Fira Sans', sans-serif;
+    margin: 12px;
+}
+
+.intro p{
+    font-family: 'Source Code Pro', monospace;
+    margin: 12px;
+}
+
+.skillsContainer{
+    padding: 12px;
+}
+
+.skill{
+    width: 265px;
+    height: 6px;
+    background-color: red;
+    border: 2px solid black;
+}
+
+.skillItem{
+    display: flex;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+}
+
+.hundred{
+    width: 265px;
+    background-color: blueviolet;
+}
+
+.fifty{
+    width: 125px;
+    background-color: aqua;
+}
+
+.t5{
+    width: 75px;
+    background-color: yellow;
+}
+
+@media (max-width:1100px) {
+    /* *{
+        background-color: red;
+    }
+    .sidebar{
+        transform: translate(-443px,0px);
+        position:absolute;
+    }*/
+    .devInfo{
+        font-size: 10px;
+    }
+    .devPic{
+        display: none;
+    }
+
+    .intro, .blogContainer, .contactform{
+        margin: 50px 8px;
+    }
+    .buttons{
+        font-size: 10px;
+    }
+} 
+
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.sidebarGo{
+    transform: translate(-443px,0px);
+    position:absolute;
+}
+
+.cross{
+    margin-left: 394px;
+    margin-top: 10px;
+}
+
+.ham{
+    margin-top: 10px;
+    margin-left: 10px;
+}
